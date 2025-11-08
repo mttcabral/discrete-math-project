@@ -1,22 +1,23 @@
-# Instruções básicas
+# Discrete Math Spiral Project
 
-- Em um terminal Linux, na pasta raiz do projeto, execute os seguintes comandos:
+This is a university project for a Discrete Mathematics course (DCC216 @ UFMG). It provides C programs to calculate the (x,y) coordinates for the n-th point of three different 2D spirals:
 
-  - Compilar espirais
+* `espquadrada`: A square-based spiral
+* `esptriangular`: A triangular-based spiral
+* `minhaesp`: A custom-defined spiral
 
-    - `make all`
+## Requirements
 
-  - Executar espiral quadrada e fornecer como entrada o n-ésimo ponto desejado
+* A Linux environment
+* `gcc` compiler
+* `make`
 
-    - `build/./espquadrada`
+## Build and Run Instructions
 
-  - Executar espiral triangular e fornecer como entrada o n-ésimo ponto desejado
+All commands are intended to be run from the root directory of the project in a Linux terminal.
 
-    - `build/./esptriangular`
+### 1. Build
+To compile all three spiral executables, use the Makefile:
 
-  - Executar minha espiral e fornecer como entrada o n-ésimo ponto desejado
-
-    - `build/./minhaesp`
-
-  - Limpar pasta build
-    - `make clean`
+```bash
+make all
